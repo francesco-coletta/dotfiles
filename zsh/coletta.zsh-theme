@@ -25,7 +25,7 @@ username="%n"
 time="[%D{%d/%b %a} %*]"
 style_time="${resetColor}%{$fg[white]%}"
 
-hostname="%n"
+hostname="%m"
 style_hostname="${resetColor}%{$fg[yellow]%}"
 
 pwd="%3~"
@@ -35,7 +35,7 @@ style_prompt="%{$fg_bold[$CARETCOLOR]%}${resetColor}"
 
 
 # Build the prompt
-PROMPT=""
+PROMPT="╭─"
 PROMPT+="${style_username}${username}" # Username
 PROMPT+="${defaultColor}@" # @
 PROMPT+="${style_hostname}${hostname}" # Host
@@ -49,6 +49,8 @@ PROMPT+=" "
 PROMPT+="" # Newline
 #PROMPT+="${style_prompt}$(prompt_char)"
 PROMPT+="${style_prompt}>"
+PROMPT+="
+╰─%B>%b "
 
 
 RPROMPT=""

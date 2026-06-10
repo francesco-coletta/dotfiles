@@ -18,7 +18,7 @@ mediante wget:
 
 # Copiare il file di configurazione del theme
 
-	cp <git repo>/dotfiles/zsh/coletta.zsh-theme ~/.oh-my-zsh/themes/coletta.szh-theme
+	cp <git repo>/dotfiles/zsh/coletta.zsh-theme ~/.oh-my-zsh/themes/coletta.zsh-theme
 
 # Cambiare la shell di default 
 
